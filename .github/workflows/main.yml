@@ -1,7 +1,8 @@
 name: Unit Tests  # Name of the workflow
 
-on: [pull_request]       # Trigger on push events
-
+on: 
+  pull_request:       # Trigger on push events
+      branches: [main]
 jobs:
   test:
     runs-on: windows-latest-latest  # Run on a virtual environment
