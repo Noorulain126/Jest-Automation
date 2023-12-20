@@ -1,6 +1,6 @@
 name: Unit Tests  # Name of the workflow
 
-on: [pull_request]
+on: [push]
    
 
 jobs:
@@ -17,4 +17,4 @@ jobs:
       - run: npm install selenium-webdriver
       - run: npm install -g chromedriver 
       - run: npm install axios a
-      - run: npm test       # Run Jest tests
+      - run: jest       # Run Jest tests
