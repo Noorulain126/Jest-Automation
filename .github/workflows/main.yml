@@ -1,28 +1,19 @@
-name : Unit Tests
-on : [pull-request]
- 
-jobs :
-tests:
-runs-on: windows-latest
-strategy:
-matrix :
-node-version : [18.x]
- 
--steps:
-      - uses: actions/checkout@v2
-      - uses : Use Node.js ${{matrix.node-version}}
-      - uses: actions/setup-node@v1
+name: Unit Tests  # Name of the workflow
+
+on: [pull_request]       # Trigger on push events
+
+jobs:
+  test:
+    runs-on: windows-latest-latest  # Run on a virtual environment
+
+    steps:
+      - uses: actions/checkout@v3  # Check out repository code
+      - uses: actions/setup-node@v3  # Set up Node.js environment
         with:
-          node-version: ${{ matrix.node-version}}
-      - name : npm install
-      - run: npm ci
-      name : tests
-      - run: npm test
-      - name: install jest
-      run:  npm install --save-dev jest   
-     - name: install Selenium-Webdriver
-     run:  npm install selenium-webdriver
-     - name: Install Chrome
-     - run: npm install -g chromedriver 
-     - name: install axios
-     -run: npm install axios  a
+          node-version: 16  # Specify Node.js version
+      - run: npm install  # Install project dependencies
+      - run: npm install --save-dev jest
+      - run: npm install selenium-webdriver
+      - run: npm install -g chromedriver 
+      - run: npm install axios a
+      - run: npm test       # Run Jest tests
