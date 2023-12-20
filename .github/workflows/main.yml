@@ -1,8 +1,7 @@
 name: Unit Tests  # Name of the workflow
 
-on:
-  pull_request:
-    branches: [master] 
+on: [pull_request]
+   
 
 jobs:
   test:
