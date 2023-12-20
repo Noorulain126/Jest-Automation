@@ -1,8 +1,6 @@
 name: Unit Tests  # Name of the workflow
 
-on: 
-    pull_request:  # Trigger on push events
-        branches: [master] 
+on: [pull-request]
 
 jobs:
   test:
