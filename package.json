@@ -12,13 +12,6 @@
     "reporters": [
       "default",
       "jest-html-reporter"
-    ],
-    "transform": {
-      "^.+\\.js$": "babel-jest",
-      "^.+\\.java$": ""    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
     ]
   },
   "keywords": [],
