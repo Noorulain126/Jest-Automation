@@ -6,4 +6,3 @@ it("renders correctly when there are no todos", () => {
 const tree = renderer.create(<Todos todos={[]}/>).toJSON();
 expect(tree).toMatchSnapshot();
 });
-//End of Line
