@@ -1,0 +1,28 @@
+name : Unit Tests
+on : [pull-request]
+ 
+jobs :
+tests:
+runs-on: windows-latest
+strategy:
+matrix :
+node-version : [18.x]
+ 
+-steps:
+      - uses: actions/checkout@v2
+      - uses : Use Node.js ${{matrix.node-version}}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version}}
+      - name : npm install
+      - run: npm ci
+      name : tests
+      - run: npm test
+      - name: install jest
+      run:  npm install --save-dev jest   
+     - name: install Selenium-Webdriver
+     run:  npm install selenium-webdriver
+     - name: Install Chrome
+     - run: npm install -g chromedriver 
+     - name: install axios
+     -run: npm install axios  
