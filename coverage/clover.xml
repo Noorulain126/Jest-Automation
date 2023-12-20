@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703054861500" clover="3.2.0">
-  <project timestamp="1703054861501" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="18" coveredelements="18" complexity="0" loc="14" ncloc="14" packages="4" files="4" classes="4"/>
-    <package name="Jest-Automation.Matchers">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="sum.js" path="D:\Projects\JestApp\Jest-Automation\Matchers\sum.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="Jest-Automation.async">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="async.js" path="D:\Projects\JestApp\Jest-Automation\async\async.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1703076323836" clover="3.2.0">
+  <project timestamp="1703076323837" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="9" coveredelements="9" complexity="0" loc="7" ncloc="7" packages="2" files="2" classes="2"/>
     <package name="Matchers">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="sum.js" path="D:\Projects\JestApp\Matchers\sum.js">
